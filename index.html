@@ -26,7 +26,7 @@
   <body>
     <!--Header Section-->
 
-    <header>
+    <header id="mainHeader">
       <div class="header">
         <div class="burger-bar" id="burgerBar">
           <i class="fa-solid fa-bars" id="icon"></i>
@@ -36,10 +36,10 @@
         </a>
         <nav class="navigation" id="navBar">
           <ul class="nav-list">
-            <a href="#">Home</a>
+            <a href="#mainHeader">Home</a>
             <a href="#">Trips</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
+            <a href="#aboutUs">About Us</a>
+            <a href="#contact">Contact</a>
           </ul>
         </nav>
         <button class="login-btn">Login</button>
@@ -71,7 +71,7 @@
       </section>
 
       <!--Section About Us-->
-      <section class="section-about-us">
+      <section id="aboutUs" class="section-about-us">
         <div class="section-about-us-ovarley"></div>
         <h2>ABOUT US</h2>
       </section>
@@ -95,7 +95,7 @@
         </p>
       </section>
       <!--Section Contact-->
-      <section class="section-contact">
+      <section id="contact" class="section-contact">
         <div class="section-contact-ovarley"></div>
         <h2 class="section-contact-header">CONTACT</h2>
         <div class="section-block-cont">
