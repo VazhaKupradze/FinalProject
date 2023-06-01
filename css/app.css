@@ -1,0 +1,323 @@
+/* Header Section*/
+header {
+  height: 93px;
+  display: flex;
+  align-items: center;
+}
+.burger-bar {
+  display: none;
+  color: snow;
+  font-size: 25px;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 77;
+  background-color: #536171;
+}
+.logo img {
+  width: 140px;
+  height: 50px;
+  background-color: #fff;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.navigation {
+  width: 600px;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-list a {
+  font-family: "Bebas Neue", sans-serif;
+  position: relative;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 500;
+}
+.nav-list a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: snow;
+  border-radius: 10px;
+  left: 0;
+  bottom: -5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1s;
+}
+.nav-list a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.login-btn {
+  font-family: "Bebas Neue", sans-serif;
+  width: 140px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid snow;
+  color: snow;
+  outline: none;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 1s;
+}
+.login-btn:hover {
+  background: snow;
+  color: #536171;
+}
+
+/* Cover Section */
+.cover-section {
+  background-image: url(../images/trips-cover.jpg);
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.cover-section .slide-overlay-bg {
+  background-color: #536171;
+  opacity: 0.3;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+/* Section One*/
+
+.section-one {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-evenly;
+  background-color: #536171;
+  padding: 6.25rem 0;
+}
+.sec-one-block {
+  max-width: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec-one-block i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: snow;
+}
+.sec-one-block span {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+  color: snow;
+  margin: 2rem 0;
+}
+.sec-one-block p {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  color: snow;
+}
+
+/* Section About Us*/
+
+.section-about-us {
+  background-image: url(../images/img5.jpg);
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0px;
+}
+.section-about-us-ovarley {
+  background-color: #536171;
+  opacity: 0.4;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.section-about-us h2 {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  color: snow;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1rem;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.5em;
+}
+/*Section About Us Description*/
+.section-about-us-descr {
+  padding: 4rem 6rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  background-color: #536171;
+}
+.section-about-us-descr p {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: snow;
+}
+
+/*Section Contact*/
+.section-contact {
+  background-image: url(../images/aboutus-cover.jpg);
+  opacity: 0.8;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.section-contact-header {
+  padding: 4rem 0;
+  color: snow;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1rem;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 7rem;
+  font-style: normal;
+  text-align: center;
+}
+.section-block-cont {
+  max-width: 100%;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.contact-block-one {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+.contact-block-one h2 {
+  margin: 2rem;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.8rem;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  color: snow;
+}
+.contact-block-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+.contact-block-list a {
+  color: snow;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 1.5rem;
+  margin: 1rem;
+  transition: 0.7s;
+}
+.contact-block-list a:hover {
+  color: black;
+}
+.contact-block-two {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+.contact-block-two h2 {
+  margin: 1rem;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.8rem;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  color: snow;
+}
+.form-wraper {
+  display: flex;
+  flex-direction: column;
+  max-height: 400px;
+  height: 100%;
+  justify-content: space-between;
+  margin-left: 3rem;
+}
+.form-wraper label {
+  color: snow;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  transition: 0.7s;
+}
+.input-element {
+  background-color: #536171;
+  border: none;
+  border-radius: 5px;
+  width: 40%;
+  height: 1.5rem;
+  color: snow;
+}
+.text-element {
+  background-color: #536171;
+  border: none;
+  border-radius: 5px;
+  width: 60%;
+  max-height: 50px;
+  height: 100%;
+  color: snow;
+  resize: none;
+}
+
+.comfirm-button {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #536171;
+  color: snow;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  transition: 0.7s;
+  margin: 1rem;
+}
+.comfirm-button:hover {
+  color: black;
+  background-color: #536171;
+}

@@ -1,0 +1,71 @@
+@media (max-width: 1024px) {
+  .header {
+    padding: 20px 10px;
+  }
+}
+@media (max-width: 768px) {
+  /*Header*/
+  .logo {
+    display: none;
+  }
+  /*Section About Us*/
+  .section-about-us-descr {
+    padding: 4rem 1rem;
+  }
+  /*Section Contact*/
+  .section-block-cont {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-contact-header {
+    padding: 2rem 0;
+    line-height: 3rem;
+  }
+  .contact-block-list a {
+    letter-spacing: 0.1rem;
+    font-size: 1.3rem;
+    margin: 0.5rem;
+  }
+  .form-wraper label {
+    font-size: 1.3rem;
+    margin: 0.5rem;
+  }
+  .contact-block-one {
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 0;
+  }
+  .contact-block-two {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .burger-bar {
+    display: block;
+    margin-top: 1rem;
+  }
+  .login-btn {
+    margin-top: 1rem;
+  }
+  .navigation {
+    display: none;
+  }
+  .navigation.navActive {
+    display: block;
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-list {
+    flex-direction: column;
+    width: 140px;
+    row-gap: 1rem;
+  }
+  /*Section One*/
+  .section-one {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <title>Drive-Tribe</title>
+  </head>
+  <body>
+    <!--Header Section-->
+
+    <header>
+      <div class="header">
+        <div class="burger-bar" id="burgerBar">
+          <i class="fa-solid fa-bars" id="icon"></i>
+        </div>
+        <a class="logo" href="index.html">
+          <img src="images/logo.webp" alt="logo" />
+        </a>
+        <nav class="navigation" id="navBar">
+          <ul class="nav-list">
+            <a href="#">Home</a>
+            <a href="#">Trips</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+          </ul>
+        </nav>
+        <button class="login-btn">Login</button>
+      </div>
+    </header>
+    <main>
+      <!--Cover Section-->
+      <section class="cover-section">
+        <div class="slide-overlay-bg"></div>
+      </section>
+
+      <!--SecTion One-->
+      <section class="section-one">
+        <div class="sec-one-block">
+          <i class="fa-solid fa-person"></i>
+          <span>3</span>
+          <p>Group Members</p>
+        </div>
+        <div class="sec-one-block">
+          <i class="fa-solid fa-map-location"></i>
+          <span>5</span>
+          <p>Number of Trips</p>
+        </div>
+        <div class="sec-one-block">
+          <i class="fa-solid fa-car"></i>
+          <span>3</span>
+          <p>Team Cars</p>
+        </div>
+      </section>
+
+      <!--Section About Us-->
+      <section class="section-about-us">
+        <div class="section-about-us-ovarley"></div>
+        <h2>ABOUT US</h2>
+      </section>
+
+      <!--Section About Us Description-->
+      <section class="section-about-us-descr">
+        <p>
+          Drive Tribe Georgia is a 2021 campaign started by car enthusiasts to
+          unite travel enthusiasts.
+        </p>
+        <p>
+          Trips aren't just about destinations. Our goal is to visit all corners
+          of Georgia. Traveling is the best way to have new adventures, new
+          experiences, to see yourself and other places in the world. When you
+          travel to a new place, you share more with another culture, discover a
+          new world, beautiful views, different nature.
+        </p>
+        <p>
+          Traveling allows us to appreciate a different moment of life every
+          day.
+        </p>
+      </section>
+      <!--Section Contact-->
+      <section class="section-contact">
+        <div class="section-contact-ovarley"></div>
+        <h2 class="section-contact-header">CONTACT</h2>
+        <div class="section-block-cont">
+          <div class="contact-block-one">
+            <h2>
+              Contact <br />
+              Information
+            </h2>
+            <ul class="contact-block-list">
+              <li>
+                <a href="https://goo.gl/maps/jMAP6kV7SLuepSpk9"
+                  ><span><i class="fa-solid fa-location-dot"></i></span>
+                  Aghmashenebeli David Ave</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@drivetribe.ge"
+                  ><span><i class="fa-regular fa-envelope"></i></span>
+                  Info@drivetribe.ge</a
+                >
+              </li>
+              <li>
+                <a href="callto:+9955555555"
+                  ><span><i class="fa-solid fa-phone"></i></span> +995 555 555
+                  555</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCMvAoWh2FsovP9CSJHFXH0Q"
+                  ><span><i class="fa-brands fa-youtube"></i></span>YOUTUBE</a
+                >
+              </li>
+              <li>
+                <a href="https://www.facebook.com/DriveTribeGeorgia"
+                  ><span><i class="fa-brands fa-facebook"></i></span>FACEBOOK</a
+                >
+              </li>
+              <li>
+                <a href="https://www.instagram.com/drivetribegeorgia/"
+                  ><span><i <i class="fa-brands fa-instagram"></i></span
+                  >INSTAGRAM</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="contact-block-two">
+            <h2>Contact Us</h2>
+            <form class="form-wraper" action="">
+              <label for="fullName">Full name</label>
+              <input
+                class="input-element"
+                type="text"
+                name="fullName"
+                id="fullName"
+              />
+
+              <label for="email">Email</label>
+              <input
+                class="input-element"
+                type="email"
+                name="email"
+                id="email"
+              />
+
+              <label for="phoneNumber">Phone number</label>
+              <input
+                class="input-element"
+                type="tel"
+                name="phoneNumber"
+                id="phoneNumber"
+              />
+
+              <label for="commentBlock">Text</label>
+              <textarea
+                class="text-element"
+                name="commentBlock"
+                id="commentBlock"
+              ></textarea>
+
+              <button class="comfirm-button" type="submit">Comfirm</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="javascript/script.js"></script>
+  </body>
+</html>
