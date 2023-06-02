@@ -1,3 +1,5 @@
+//Burger Bar
+
 let burger = document.getElementById("burgerBar");
 let navigation = document.getElementById("navBar");
 

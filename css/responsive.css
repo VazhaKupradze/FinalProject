@@ -2,6 +2,11 @@
   .header {
     padding: 20px 10px;
   }
+
+  .mySlides img {
+    max-height: 600px;
+    height: 100%;
+  }
 }
 @media (max-width: 768px) {
   /*Header*/
@@ -31,15 +36,16 @@
     margin: 0.5rem;
   }
   .contact-block-one {
-    border-top-right-radius: 100px;
+    border-top-right-radius: 50px;
     border-bottom-left-radius: 0;
   }
   .contact-block-two {
     border-top-right-radius: 0;
-    border-bottom-left-radius: 100px;
+    border-bottom-left-radius: 50px;
   }
 }
 @media (max-width: 480px) {
+  /*Header*/
   .burger-bar {
     display: block;
     margin-top: 1rem;
@@ -67,5 +73,35 @@
     flex-direction: column;
     align-items: center;
     row-gap: 30px;
+  }
+  /*Section Contact*/
+  .section-contact-header {
+    padding: 1rem 0;
+    line-height: 1rem;
+    font-size: 20px;
+  }
+  .contact-block-one h2 {
+    letter-spacing: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0.5rem;
+  }
+  .contact-block-list a {
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+  .contact-block-list {
+    row-gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .contact-block-two h2 {
+    margin: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+  }
+  .form-wraper label {
+    font-size: 1rem;
+    margin: 0.5rem;
   }
 }
